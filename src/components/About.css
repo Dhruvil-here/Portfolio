@@ -1,0 +1,151 @@
+.skills-container {
+  z-index: 99999;
+  /* background: #111; */
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills-box {
+  /* background-color: #1c1c1c; */
+  padding: 60px 40px;
+  border-radius: 10px;
+  position: relative;
+  /* box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3); */
+  max-width: 1100px;
+  width: 100%;
+}
+
+.skills-title {
+  text-align: center;
+  color: #f8ebe3;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.skills-description {
+  text-align: center;
+  color: #bbb;
+  font-size: 20px;
+  max-width: 700px;
+  margin: 0 auto 50px;
+  line-height: 1.8;
+}
+
+
+.skill-card {
+  background: rgba(92, 125, 142, 0.2);
+  backdrop-filter: blur(4px);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  background: rgba(92, 125, 142, 0.612);;
+}
+
+.skill-card img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .skills-box {
+    padding: 40px 20px;
+  }
+
+  .skills-title {
+    font-size: 28px;
+  }
+
+  .skills-description {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+  }
+
+  .skill-card {
+    padding: 16px;
+  }
+
+  .skill-card img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-container {
+    padding: 10px 15px;
+  }
+
+  .skills-box {
+    padding: 30px 15px;
+  }
+
+  .skills-title {
+    font-size: 24px;
+  }
+
+  .skills-description {
+    font-size: 13px;
+  }
+
+  .skills-grid {
+    gap: 15px;
+  }
+
+  .skill-card img {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+
+.auto-scroll-container {
+  overflow: hidden;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.scroll-track {
+  padding-top: 10px;
+  display: flex;
+  gap: 20px;
+  animation: scroll-left 20s linear infinite;
+  width: max-content;
+}
+
+.scroll-card {
+  min-width: 140px;
+}
+
+.auto-scroll-container:hover .scroll-track {
+  animation-play-state: paused;
+}
+
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
