@@ -88,25 +88,57 @@ const Navbar = () => {
       {/* Mobile Nav Links */}
       {isMenuOpen && (
         <div className="nav-links mobile">
-          <button className="link" onClick={() => {scrollToSection("home"); toggleMenu()}}>
+          <button
+            className="link"
+            onClick={() => {
+              scrollToSection("home");
+              toggleMenu();
+            }}
+          >
             Home
           </button>
-          <button className="link" onClick={() => {scrollToSection("about"); toggleMenu()}}>
+          <button
+            className="link"
+            onClick={() => {
+              scrollToSection("about");
+              toggleMenu();
+            }}
+          >
             About
           </button>
-          <button className="link" onClick={() => {scrollToSection("projects"); toggleMenu()}}>
+          <button
+            className="link"
+            onClick={() => {
+              scrollToSection("projects");
+              toggleMenu();
+            }}
+          >
             Projects
           </button>
-          <button className="link" onClick={() => {scrollToSection("contactme"); toggleMenu()}}>
+          <button
+            className="link"
+            onClick={() => {
+              scrollToSection("contactme");
+              toggleMenu();
+            }}
+          >
             Contact Me
           </button>
         </div>
       )}
 
-      {/* Resume Button */}
+      {/* Resume Button (Desktop Only) */}
       <a
         href="/images/react2.docx"
-        className="resume"
+        className="resume desktop-resume"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <button>Resume</button>
+      </a>
+      <a
+        href="/images/react2.docx"
+        className="resume mobile-resume"
         target="_blank"
         rel="noopener noreferrer"
       >

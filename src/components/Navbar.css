@@ -118,6 +118,42 @@
   background: rgba(92, 125, 142, 0.612);
 }
 
+/* Hide desktop resume button on mobile */
+.desktop-resume {
+  display: block;
+}
+
+.mobile-resume {
+  display: none;
+}
+
+/* Show resume button in mobile nav */
+@media (max-width: 768px) {
+  .desktop-resume {
+    display: none;
+  }
+
+  .mobile-resume {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .mobile-resume button {
+    width: 100%;
+    padding: 12px 0;
+    background-color: rgba(92, 125, 142, 0.2);
+    color: #f8ebe3;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .mobile-resume button:hover {
+    background-color: rgba(92, 125, 142, 0.5);
+  }
+}
+
 /* Responsive styles */
 @media (max-width: 768px) {
   .nav {

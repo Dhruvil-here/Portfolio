@@ -16,14 +16,14 @@ const projects = [
     description:
       "Desktop app to manage daily and monthly expenses using Java Swing and MySQL.",
     github: "https://github.com/Dhruvil-here/SpendingsTracker",
-    live: "#",
+    live: "https://github.com/Dhruvil-here/SpendingsTracker",
   },
   {
     title: "Resume-Builder",
     image: "/images/resumebuilder.avif",
     description: "Website to build a resume template to decrease human efforts",
     github: "https://github.com/Dhruvil-here/Resume-Builder",
-    live: "https://your-portfolio.vercel.app",
+    live: "https://github.com/Dhruvil-here/Resume-Builder",
   },
 ];
 
