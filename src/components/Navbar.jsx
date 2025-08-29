@@ -124,6 +124,12 @@ const Navbar = () => {
           >
             Contact Me
           </button>
+          <button
+            className="link"
+            onClick={() => window.open("/images/react2.docx", "_blank")}
+          >
+            Resume
+          </button>
         </div>
       )}
 
