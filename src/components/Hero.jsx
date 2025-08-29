@@ -4,12 +4,8 @@ import "./Hero.css";
 import { ArrowDownRight } from "lucide-react";
 
 const Hero = () => {
-  
-
   return (
     <div className="hero-section">
-
-      
       <h2 className="typing-text">
         <button className="available-for-btn">
           <div className="circle">
@@ -37,8 +33,16 @@ const Hero = () => {
             deleteSpeed={50}
             delaySpeed={1500}
           />
-          <ArrowDownRight />
         </div>
+        <ArrowDownRight
+          className="scroll-arrow"
+          size={48}
+          onClick={() =>
+            document
+              .getElementById("about")
+              .scrollIntoView({ behavior: "smooth" })
+          }
+        />
       </h2>
 
       <div className="image">

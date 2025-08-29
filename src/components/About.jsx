@@ -26,7 +26,7 @@ const About = () => {
             Editor, Gemini API, and deploying with Vercel. 🚀 Let’s build
             something impactful together!
           </p>
-          
+           
           <div className="auto-scroll-container">
             <div className="scroll-track">
               {duplicatedSkills.map((skill, index) => (
